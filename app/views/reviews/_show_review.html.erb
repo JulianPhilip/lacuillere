@@ -1,0 +1,22 @@
+
+<br>
+<br>
+<strong>Reviews:</strong>
+  <table>
+    <thead>
+      <tr>
+        <th>Created_at</th><p>
+        <th>Comment</th><p>
+        <th>Rating</th><p>
+      </th>
+    </thead>
+    <tbody>
+      <% @restaurant.reviews.each do |review| %>
+      <tr>
+        <td><%= review.created_at %></td><br>
+        <td><%= review.content %></td><br>
+        <td><%= review.rating %></td><br>
+      </tr>
+    </tbody>
+    <% end %>
+  </table>
